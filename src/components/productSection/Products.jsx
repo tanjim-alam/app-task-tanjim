@@ -39,7 +39,6 @@ const Products = () => {
     const [filteredDataList, setFilteredDataList] = useState(productData);
 
     useEffect(() => {
-        console.log(productFilter)
         if (productFilter === 'lowToHigh') {
             const sortedDataList = productData.sort((a, b) => a.price - b.price);
             setFilteredDataList([...sortedDataList]);
@@ -123,25 +122,25 @@ const Products = () => {
                             <Accordion handleFilterChangeByCategory={handleFilterChangeByCategory} title={idealForList[0]} contents={idealForList[1]} />
                         </div>
                         <div className="occasion productsAccordionBox">
-                            <Accordion title={occasionList[0]} contents={occasionList[1]} />
+                            <Accordion handleFilterChangeByCategory={handleFilterChangeByCategory} title={occasionList[0]} contents={occasionList[1]} />
                         </div>
                         <div className="work productsAccordionBox">
-                            <Accordion title={workList[0]} contents={workList[1]} />
+                            <Accordion handleFilterChangeByCategory={handleFilterChangeByCategory} title={workList[0]} contents={workList[1]} />
                         </div>
                         <div className="fabric productsAccordionBox">
-                            <Accordion title={fabricList[0]} contents={fabricList[1]} />
+                            <Accordion handleFilterChangeByCategory={handleFilterChangeByCategory} title={fabricList[0]} contents={fabricList[1]} />
                         </div>
                         <div className="segment productsAccordionBox">
-                            <Accordion title={segmentList[0]} contents={segmentList[1]} />
+                            <Accordion handleFilterChangeByCategory={handleFilterChangeByCategory} title={segmentList[0]} contents={segmentList[1]} />
                         </div>
                         <div className="suitablefor productsAccordionBox">
-                            <Accordion title={suitableForList[0]} contents={suitableForList[1]} />
+                            <Accordion handleFilterChangeByCategory={handleFilterChangeByCategory} title={suitableForList[0]} contents={suitableForList[1]} />
                         </div>
                         <div className="raw productsAccordionBox">
-                            <Accordion title={rawMaterialsList[0]} contents={rawMaterialsList[1]} />
+                            <Accordion handleFilterChangeByCategory={handleFilterChangeByCategory} title={rawMaterialsList[0]} contents={rawMaterialsList[1]} />
                         </div>
                         <div className="pattert productsAccordionBox">
-                            <Accordion title={pattertList[0]} contents={pattertList[1]} />
+                            <Accordion handleFilterChangeByCategory={handleFilterChangeByCategory} title={pattertList[0]} contents={pattertList[1]} />
                         </div>
                     </aside>
                 ) : (

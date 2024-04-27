@@ -40,8 +40,8 @@ function Navbar() {
             <button className="navBtn bag"  ><IoBagHandleOutline /></button>
             <button className="navBtn profile" ><CiUser /></button>
             <select name="" id="" style={{ border: "none" }}>
-              <option value="">ENG</option>
-              <option value="">HI</option>
+              <option value="ENG">ENG</option>
+              <option value="HI">HI</option>
             </select>
           </div>
         </div>

@@ -61,7 +61,7 @@ const productData = [
         "img": bag6,
         "desc": "Sign in or create account to see pricing",
         "price": 265,
-        "category": "Men"
+        "category": "Baby & Kids"
 
     },
     {
@@ -70,7 +70,7 @@ const productData = [
         "img": bag7,
         "desc": "Sign in or create account to see pricing",
         "price": 195,
-        "category": "Men"
+        "category": "Women"
 
     },
     {
@@ -97,7 +97,7 @@ const productData = [
         "img": bag10,
         "desc": "Sign in or create account to see pricing",
         "price": 350,
-        "category": "Men"
+        "category": "Women"
 
     },
     {
@@ -151,7 +151,7 @@ const productData = [
         "img": bag6,
         "desc": "Sign in or create account to see pricing",
         "price": 5,
-        "category": "Men"
+        "category": "Baby & Kid"
 
     },
 
@@ -161,7 +161,7 @@ const productData = [
         "img": bag6,
         "desc": "Sign in or create account to see pricing",
         "price": 110,
-        "category": "Men"
+        "category": "Baby & Kids"
 
     },
     {
