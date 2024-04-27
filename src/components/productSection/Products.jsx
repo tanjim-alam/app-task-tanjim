@@ -3,7 +3,7 @@ import "../productSection/product.css"
 import { IoIosArrowForward, IoIosArrowBack, IoIosArrowDown } from "react-icons/io";
 import useGetProduct from "../../hooks/useGetProduct";
 import ProductCard from "../productCard/ProductCard";
-import productData from "../../constants/productData";
+import { productData, PopularData, newEstFirstData } from "../../constants/productData";
 import Accordion from "../accordion/Accordion";
 const Products = () => {
     const [toggle, setToggle] = useState(false);
@@ -37,7 +37,6 @@ const Products = () => {
 
     const [productFilter, setProductFilter] = useState('');
     const [filteredDataList, setFilteredDataList] = useState(productData);
-
     useEffect(() => {
         if (productFilter === 'LOW TO HIGH') {
             const sortedDataList = productData.sort((a, b) => a.price - b.price);
@@ -51,12 +50,17 @@ const Products = () => {
             const newData = productData.map((p) => p)
             setFilteredDataList([...newData]);
         }
+        else if (productFilter === 'POPULAR') {
+            setFilteredDataList([...PopularData]);
+        }
+        else if (productFilter === 'NEWEST FIRST') {
+            setFilteredDataList([...newEstFirstData]);
+        }
         else {
             setFilteredDataList(productData);
         }
     }, [productFilter, productData]);
 
-    // console.log(filteredDataList)
     const handleFilterChange = (event) => {
         setProductFilter(event);
     };
@@ -96,21 +100,6 @@ const Products = () => {
                     FILTER
                 </span>
                 <div className="sort">
-                    {/* <div className="txt selectContainer">
-                        <select name="" id="select" style={{ paddingTop: "10px" }} onChange={handleFilterChange}>
-                            <option value="Recommended" style={{ marginTop: "10px" }}> RECOMMENDED <IoIosArrowForward /> </option>
-                            <option value="Newest first"> NEWEST FIRST</option>
-                            <option value="Popular"> POPULAR</option>
-                            <option value="highToLow">
-                                {" "}
-                                PRICE : HIGH TO LOW
-                            </option>
-                            <option value="lowToHigh">
-                                {" "}
-                                PRICE : LOW TO HIGH
-                            </option>
-                        </select>
-                    </div>{" "} */}
                     <div class="dropdown">
                         <button>{productFilter || "RECOMMENDED"} <IoIosArrowDown /></button>
                         <div class="dropdown-content">
@@ -119,7 +108,6 @@ const Products = () => {
                             <button onClick={() => handleFilterChange("POPULAR")}>POPULAR</button>
                             <button onClick={() => handleFilterChange("HIGH TO LOW")}>HIGH TO LOW</button>
                             <button onClick={() => handleFilterChange("LOW TO HIGH")}>LOW TO HIGH</button>
-                            {/* <button>Hello World!</button> */}
                         </div>
                     </div>
                 </div>

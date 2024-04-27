@@ -9,7 +9,7 @@ import bag8 from "../assets/bag8.png";
 import bag10 from "../assets/bag10.png"
 import bag11 from "../assets/bag11.png"
 import bag12 from "../assets/bag12.png"
-const productData = [
+export const productData = [
     {
         "id": 1,
         "name": "Back Pack",
@@ -175,4 +175,73 @@ const productData = [
     },
 ]
 
-export default productData;
+
+export const PopularData = [
+    {
+        "id": 1,
+        "name": "Back Pack",
+        "img": bag1,
+        "desc": "Sign in or create account to see pricing",
+        "price": 50,
+        "category": "Men"
+
+    },
+    {
+        "id": 2,
+        "name": "Leather Bag",
+        "img": bag10,
+        "desc": "Sign in or create account to see pricing",
+        "price": 10,
+        "category": "Men"
+
+    },
+    {
+        "id": 3,
+        "name": "Belt",
+        "img": bag3,
+        "desc": "Sign in or create account to see pricing",
+        "price": 90,
+        "category": "Women"
+
+    },
+    {
+        "id": 4,
+        "name": "Cap",
+        "img": bag4,
+        "desc": "Sign in or create account to see pricing",
+        "price": 35,
+        "category": "Men"
+
+    },
+]
+
+
+export const newEstFirstData = [
+    {
+        "id": 1,
+        "name": "Back Pack",
+        "img": bag1,
+        "desc": "Sign in or create account to see pricing",
+        "price": 50,
+        "category": "Men"
+
+    },
+    {
+        "id": 2,
+        "name": "Leather Bag",
+        "img": bag10,
+        "desc": "Sign in or create account to see pricing",
+        "price": 10,
+        "category": "Men"
+
+    },
+    {
+        "id": 3,
+        "name": "Belt",
+        "img": bag3,
+        "desc": "Sign in or create account to see pricing",
+        "price": 90,
+        "category": "Women"
+
+    },
+]

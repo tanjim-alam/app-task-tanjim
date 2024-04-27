@@ -64,16 +64,6 @@
     width: 100%;
     font-size: 20px;
     display: flex;
-    /* background-color: white;
-    font-size: 18px;
-    padding: auto 0;
-    line-height: 80;
-    font-weight: 700;
-    outline: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center; */
 
 }
 
@@ -82,18 +72,6 @@
     padding: 30px 20px;
 }
 
-/* #select>option {
-    background-color: white;
-    border: none;
-    min-height: 50px;
-    display: inline-block;
-    font-weight: 400;
-    padding-top: 40px;
-    margin-top: 20px;
-
-} */
-
-/* ===================Tanjim */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -129,43 +107,6 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-/* ===================Tanjim */
-
-
-/* ================== */
-.custom-select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: white;
-    padding: 0px 20px;
-    border: none;
-    outline: none;
-    display: flex;
-    gap: 30px;
-    font-size: 17px;
-    /* border: 1px solid #ccc; */
-    /* border-radius: 4px; */
-}
-
-.custom-select option {
-    background-color: white;
-    padding: 30px 20px;
-    margin-top: 20px;
-}
-
-/* Style selected option */
-.custom-select option:checked {
-    background-color: #ddd;
-}
-
-/* Hover effect for options */
-.custom-select option:hover {
-    background-color: #f0f0f0;
-}
-
-/* ================= */
 
 
 #select>option:hover {
