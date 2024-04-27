@@ -15,6 +15,10 @@ function Navbar() {
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
+
+  function handle() {
+
+  }
   return (
     <nav>
       <section className="bottom-nav">

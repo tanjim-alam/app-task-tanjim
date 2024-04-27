@@ -9,6 +9,7 @@
     border-bottom: 1px solid #E5E5E5;
 }
 
+
 .products {
     width: 87%;
     margin: 20px auto;
@@ -48,9 +49,22 @@
     margin-top: 10px
 }
 
+.selectContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-width: 250px;
+    /* height: 100px; */
+}
+
 #select {
+    appearance: none;
     border: none;
-    background-color: white;
+    padding: 10px 30px 10px 15px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    /* background-color: white;
     font-size: 18px;
     padding: auto 0;
     line-height: 80;
@@ -59,17 +73,99 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-content: center;
+    justify-content: center; */
+
 }
 
-#select>option {
+#select option:checked {
+    background-color: white;
+    padding: 30px 20px;
+}
+
+/* #select>option {
     background-color: white;
     border: none;
-    text-align: right;
+    min-height: 50px;
+    display: inline-block;
     font-weight: 400;
-    margin-top: 10px;
+    padding-top: 40px;
+    margin-top: 20px;
 
+} */
+
+/* ===================Tanjim */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    min-width: 160px;
 }
+
+.dropdown button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 25px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 0px 4px 10px 0px;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+}
+
+.dropdown-content button {
+    padding-top: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ===================Tanjim */
+
+
+/* ================== */
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    padding: 0px 20px;
+    border: none;
+    outline: none;
+    display: flex;
+    gap: 30px;
+    font-size: 17px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 4px; */
+}
+
+.custom-select option {
+    background-color: white;
+    padding: 30px 20px;
+    margin-top: 20px;
+}
+
+/* Style selected option */
+.custom-select option:checked {
+    background-color: #ddd;
+}
+
+/* Hover effect for options */
+.custom-select option:hover {
+    background-color: #f0f0f0;
+}
+
+/* ================= */
 
 
 #select>option:hover {
@@ -424,5 +520,9 @@
 
     .costomize>span {
         margin-top: 5px;
+    }
+
+    .dropdown-content {
+        padding: 20px 0px;
     }
 }
