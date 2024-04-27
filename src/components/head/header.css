@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.head {
+    width: 100%;
+    background-color: #000000;
+    color: #EB4C6B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+
+}
+
+.left-m {
+    margin-left: 274px;
+}
+
+.right-m {
+    margin-right: 274px;
+}
+
+.headlink {
+    width: 150px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width:1080px) {
+    .left-m {
+        margin-left: 174px;
+    }
+
+    .right-m {
+        margin-right: 174px;
+    }
+}
+
+@media screen and (max-width:830px) {
+    .left-m {
+        margin-left: 144px;
+    }
+
+    .right-m {
+        margin-right: 144px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .left-m {
+        margin-left: 94px;
+    }
+
+    .right-m {
+        margin-right: 94px;
+    }
+}
+
+@media screen and (max-width:658px) {
+    .left-m {
+        margin-left: 74px;
+    }
+
+    .right-m {
+        margin-right: 74px;
+    }
+
+    .headlink {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media screen and (max-width:548px) {
+
+    .left-m,
+    .right-m {
+        display: none
+    }
+
+    .head {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    .head {
+        height: 24px
+    }
+}

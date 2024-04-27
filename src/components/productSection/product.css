@@ -1,0 +1,428 @@
+.filterContainer {
+    width: calc(100% - 192px);
+    height: 88px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.products {
+    width: 87%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 4px;
+    gap: 10px;
+    row-gap: 20px;
+
+}
+
+.ico-down img {
+    rotate: 90deg
+}
+
+.showfilter {
+    width: 303px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.prod-desc {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16.8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 700;
+    margin-top: 10px
+}
+
+#select {
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    padding: auto 0;
+    line-height: 80;
+    font-weight: 700;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+#select>option {
+    background-color: white;
+    border: none;
+    text-align: right;
+    font-weight: 400;
+    margin-top: 10px;
+
+}
+
+
+#select>option:hover {
+    font-weight: 700;
+
+}
+
+#filter {
+    width: 300px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 24px 0 24px 96px;
+    gap: 26px
+}
+
+.filterBtn {
+    cursor: pointer;
+}
+
+.dnone {
+    display: none
+}
+
+#filter>span,
+#filter>div {
+    width: 100%;
+}
+
+#filter>span>span,
+#filter>div>span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.costomize {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 26px;
+}
+
+.filterlogo {
+    display: none
+}
+
+.costomize>input {
+    width: 16px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-top: 3px;
+}
+
+.costomize>span,
+.type-heading>span,
+#filter>div>span {
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 700;
+}
+
+.ideal-all {
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 400;
+    margin-top: 8px;
+    padding-bottom: 26px;
+
+}
+
+.bacored {
+    background-color: red;
+}
+
+.unSelect {
+    text-decoration: underline;
+    color: #777575;
+    padding-bottom: 26px;
+}
+
+#filter>div>span:nth-child(2) {
+    font-weight: 400;
+    margin-top: 8px;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 26px;
+}
+
+.catagory-type {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.txt:hover {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.width75 {
+    width: calc(100% - 492px);
+    margin-left: 15px;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+
+}
+
+.secondFilterContainer {
+    display: flex;
+}
+
+.catagory-type>span {
+    padding-bottom: 26px;
+}
+
+.catagory-type>span>span {
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #252020;
+}
+
+.type {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.productsAccordionBox {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.qty {
+    font-weight: 700;
+}
+
+.hidefilterBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px
+}
+
+
+.iconBox {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 1px;
+}
+
+.iconBox button {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.zIndex2 {
+    z-index: 2;
+}
+
+.rotateBy270deg {
+    rotate: 270deg
+}
+
+.rotateBy90deg {
+    rotate: 90deg
+}
+
+@media screen and (max-width:1430px) {
+
+    #filter {
+        width: 200px;
+
+    }
+
+    .showfilter {
+        width: 200px;
+    }
+
+    .width75 {
+        width: calc(100% - 392px);
+
+    }
+
+}
+
+@media screen and (max-width:1020px) {
+
+    #filter {
+        width: 160px;
+
+    }
+
+    .showfilter {
+        width: 170px;
+    }
+
+    .filterContainer {
+        width: calc(100% - 112px);
+    }
+
+    #filter {
+        margin-left: 56px;
+    }
+
+    .products {
+        width: 90%;
+        row-gap: 30px;
+        margin-bottom: 30px;
+        gap: 10px;
+    }
+
+    .width75 {
+        width: calc(100% - 362px);
+
+    }
+
+}
+
+@media screen and (max-width:805px) {
+    .filterContainer {
+        margin-top: -99px;
+    }
+
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .width75 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+    }
+
+    #select {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:647px) {}
+
+@media screen and (max-width:558px) {
+
+    #filter {
+        width: 130px
+    }
+
+    .costomize>span,
+    .type-heading>span,
+    #filter>div>span {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 700;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .filterContainer {
+        margin-top: 0px;
+        height: 58px
+    }
+
+    #select {
+        font-size: 12px;
+        width: 170px;
+    }
+
+    .qty {
+        font-size: 12px;
+    }
+
+    .txt {
+        font-size: 12px;
+    }
+
+    .products {
+        width: 100%;
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: white;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 60px;
+        row-gap: 30px;
+    }
+
+    .filterContainer {
+        width: 100%;
+    }
+
+    .filterlogo {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        line-height: 16.6px;
+        font-weight: 700;
+    }
+
+    .sort {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #E5E5E5;
+        font-size: 14px;
+        line-height: 16.6px;
+    }
+
+    .width75 {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .showfilter {
+        display: none;
+    }
+
+    .filterContainer {
+        height: 41px;
+    }
+
+    .l1 {
+        width: 100%;
+    }
+
+    .footer-bottom-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #filter {
+        z-index: 2;
+        background-color: white;
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 100%
+    }
+
+    .costomize {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0px;
+        padding-left: 5px;
+    }
+
+    .costomize>span {
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,126 @@
+.bannerContentBox {
+    height: 312px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerContent {
+    height: 168px
+}
+
+.bannerHeading {
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.bannerContent>p {
+    width: 790px;
+    height: 80px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400
+}
+
+.navLinkStructure {
+    display: none
+}
+
+@media screen and (max-width:830px) {
+    .bannerHeading {
+        font-size: 48px;
+        line-height: 55px;
+    }
+}
+
+@media screen and (max-width:808px) {
+    .bannerHeading {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .bannerContent {
+        margin-top: -110px;
+    }
+
+    .bannerContent>p {
+        width: calc(100% - 120px);
+        margin: 20px auto;
+        height: auto;
+        font-size: 20px;
+        line-height: 37px;
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    .bannerContent>p {
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    .bannerHeading {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .bannerHeading {
+        font-size: 42px;
+        line-height: 46px;
+    }
+}
+
+@media screen and (max-width:590px) {
+    .bannerHeading {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .navLinkStructure {
+        width: calc(100% - 32px);
+        margin: auto;
+        height: 46px;
+        font-size: 12px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px
+    }
+
+    .bannerContentBox {
+        width: calc(100% - 32px);
+        height: 157px;
+        margin: auto;
+    }
+
+    .bannerContent {
+        width: calc(100% - 25px);
+        height: 29px;
+        text-align: center;
+        margin-top: -99px;
+    }
+
+    .bannerHeading {
+        font-size: 24px;
+        line-height: 28.8px;
+        letter-spacing: 0px;
+    }
+
+    .bannerContent>p {
+        font-size: 16px;
+        line-height: 22px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: 400;
+    }
+
+}
